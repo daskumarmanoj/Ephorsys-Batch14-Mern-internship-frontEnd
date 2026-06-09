@@ -1,0 +1,78 @@
+.Hero-div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/HeroBBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hero-div .Hero-content {
+  width: 70%;
+  height: 100%;
+  padding: 50px 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.Hero-content .Hero-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-style: italic;
+}
+.Hero-content .hero-para {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.Hero-content .Hero-btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.Hero-btns .book-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: red;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.Hero-btns .menu-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .Hero-div .Hero-content {
+    width: 100%;
+  }
+  .Hero-content .Hero-heading {
+    font-size: 2.5rem;
+  }
+  .Hero-content .hero-para {
+    font-size: 1rem;
+  }
+  .Hero-btns .book-btn {
+    padding: 0.5rem 1rem;
+
+    font-size: 1rem;
+  }
+  .Hero-btns .menu-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .Hero-div {
+    background-image: url("../assets/herobgmobile.jpg");
+  }
+}

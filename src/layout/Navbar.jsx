@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 function Navbar() {
 
   const [openMobile, setOpenMobile] = useState(false)
+
+  function HideMobileMenu() {
+    setOpenMobile(false)
+  }
   return (
     <>
       <div className="Navbar">
@@ -42,10 +46,10 @@ function Navbar() {
         {openMobile && (
           <div className="mobile-menu">
             <div className="mobile-menu-item">
-              <Link to="/">Home</Link>
-              <Link to="/service">Service</Link>
-              <Link to="/about">About Us</Link>
-              <Link to="/contact">Contact Us</Link>
+              <Link onClick={HideMobileMenu} to="/">Home</Link>
+              <Link onClick={HideMobileMenu} to="/service">Service</Link>
+              <Link onClick={HideMobileMenu} to="/about">About Us</Link>
+              <Link onClick={HideMobileMenu} to="/contact">Contact Us</Link>
             </div>
             <div className="mobile-btn">
               <button className="Book-btn">Book Your Order</button>

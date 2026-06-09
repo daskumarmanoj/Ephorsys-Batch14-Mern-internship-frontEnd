@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <div style={{marginTop:"100px"}}>
+        <div style={{marginTop:"80px"}}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/service" element={<ServicePage />} />
