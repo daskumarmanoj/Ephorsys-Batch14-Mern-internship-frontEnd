@@ -1,0 +1,58 @@
+.weprovide-main {
+  width: 100%;
+  padding: 50px 7%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.weprovide-main .left {
+  width: 50%;
+  height: 400px;
+}
+
+.left .food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.weprovide-main .right {
+  width: 50%;
+}
+.right .heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+.right .f-para {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.right .s-para {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.right .btn {
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .weprovide-main {
+    flex-direction: column;
+  }
+  .weprovide-main .left {
+    width: 100%;
+  }
+  .weprovide-main .right {
+    width: 100%;
+  }
+}
