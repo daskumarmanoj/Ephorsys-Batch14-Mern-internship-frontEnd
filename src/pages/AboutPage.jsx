@@ -1,7 +1,11 @@
+import Video from "../components/Video"
+import WeProvide from "../components/WeProvide"
+
 function AboutPage() {
   return (
     <>
-      <h1>About Page</h1>
+      <WeProvide />
+      <Video />
     </>
   )
 }

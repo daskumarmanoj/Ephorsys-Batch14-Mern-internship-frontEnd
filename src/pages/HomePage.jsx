@@ -3,6 +3,7 @@ import FastestFood from "../components/FastestFood"
 import HeroSection from "../components/HeroSection"
 import Weoffer from "../components/Weoffer"
 import WeProvide from "../components/WeProvide"
+import WhatOurCustomer from "../components/WhatOurCustomer"
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <WeProvide />
       <Weoffer />
       <FastestFood />
+      <WhatOurCustomer />
     </>
   )
 }

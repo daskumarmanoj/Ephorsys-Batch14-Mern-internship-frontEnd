@@ -5,17 +5,24 @@ import HomePage from "./pages/HomePage"
 import ServicePage from "./pages/ServicePage"
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
+import BookTable from "./components/BookTable"
+import LoginPage from "./pages/LoginPage"
+import Register from "./pages/Register"
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <div style={{marginTop:"80px"}}>
+        <div style={{ marginTop: "80px" }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/service" element={<ServicePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/booktable" element={<BookTable />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<Register />} />
+
           </Routes>
         </div>
 

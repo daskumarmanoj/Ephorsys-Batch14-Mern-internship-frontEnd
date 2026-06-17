@@ -4,7 +4,7 @@ import { CgProfile } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Navbar() {
 
   const [openMobile, setOpenMobile] = useState(false)
@@ -12,6 +12,8 @@ function Navbar() {
   function HideMobileMenu() {
     setOpenMobile(false)
   }
+
+  const navigate = useNavigate()
   return (
     <>
       <div className="Navbar">
@@ -31,8 +33,8 @@ function Navbar() {
 
         {/* Right */}
         <div className="nav-right">
-          <button className="Book-btn">Book Your Order</button>
-          <CgProfile className="icon" size={45} />
+          <button onClick={() => navigate("/booktable")} className="Book-btn">Book Your Order</button>
+          <CgProfile onClick={() => navigate("/login")} className="icon" size={45} />
         </div>
 
         {/* menu Icon */}
@@ -52,8 +54,8 @@ function Navbar() {
               <Link onClick={HideMobileMenu} to="/contact">Contact Us</Link>
             </div>
             <div className="mobile-btn">
-              <button className="Book-btn">Book Your Order</button>
-              <button className="ls-btn">Login/SignUp</button>
+              <button className="Book-btn" onClick={() => { navigate("/booktable"); HideMobileMenu() }}>Book Your Order</button>
+              <button className="ls-btn" onClick={() => { () => navigate("/login"); HideMobileMenu() }}>Login/SignUp</button>
             </div>
           </div>
         )}
